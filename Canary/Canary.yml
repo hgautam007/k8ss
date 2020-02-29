@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hworldv2
+  labels:
+    app: hworld
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hworld
+      version: 2.0.0
+  template:
+    metadata:
+      labels:
+        app: hworld
+        version: 2.0.0
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9101"
+    spec:
+      containers:
+      - name: hworld
+        image: hgautam007/harish:1.0.2
+        ports:
+        - name: http
+          containerPort: 8080
+

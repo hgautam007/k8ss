@@ -1,0 +1,14 @@
+DEBUG:root:This message should go to the log file
+DEBUG:root:This is a debug message
+INFO:root:This is an info message
+WARNING:root:This is a warning message
+ERROR:root:This is an error message
+DEBUG:root:This will get logged
+WARNING:root:This will get logged to a file
+WARNING:root:This is a Warning
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): httpbin.org:80
+DEBUG:urllib3.connectionpool:http://httpbin.org:80 "GET /ge HTTP/1.1" 404 233
+DEBUG:root:This message should go to the log file
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.17.114.91:31102
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.17.114.91:31102
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.17.114.91:31102
